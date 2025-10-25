@@ -1,0 +1,53 @@
+body {
+    background-image: url(img/background.png);
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}   
+
+h1 { 
+    font-family: Comic Sans MS;
+    font-size: 60px;
+    color: darkblue;
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+h3 a { 
+    color: red;
+}
+
+h3 a:hover { 
+    color: orange;
+    text-decoration: underline;
+}
+
+h4 {
+    text-align: center;
+    font-style: italic;
+}
+
+#paragrafatas {
+    color: orange;
+}
+
+#paragrafbawah {
+    line-height: 33px;
+}
+
+p {
+    text-align: center;
+}
+
+p a {
+    text-decoration: none;
+}
+
+p a:hover {
+    color: white;
+    background-color: blue;
+    text-decoration: none;
+}
