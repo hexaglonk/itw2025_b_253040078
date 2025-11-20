@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: 16px/28px arial, sans-serif;
+  background-color: #eaeaea;
+  color: #333;
+  background-size: 100%;
+  background-image: url(img/T4b/pattern.png);
+}
+
+.container {
+  width: 960px;
+  margin: 80px auto;
+  background-color: #fff;
+  position: relative;
+}
+
+.header {
+  padding: 20px;
+  padding-bottom: 10px;
+}
+
+.header .judul {
+  font-size: 40px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.telu-part {
+  color: #808080;
+}
+
+.sure-part {
+  color: red;
+}
+
+.telu-part, .sure-part {
+  display: inline;
+}
+
+.header ul li { 
+  display: inline-block;
+  margin-right: 10px;
+  margin-top: 20px;
+}
+
+.header a {
+  text-decoration: none;
+  color: salmon;
+  padding: 3px;
+}
+
+.header a:hover {
+  background-color: lightskyblue;
+  color: white;
+}
+
+.hero {
+  height: 320px;
+  background-image: url(img/T4b/hero.jpg);
+  background-size: cover;
+  background-position: -10px -160px;
+  border-bottom: 5px solid lightskyblue;
+  border-top: 5px solid salmon;
+}
+
+.main {
+  width: 600px;
+  padding: 20px;
+  box-sizing: border-box;
+  float: left;
+}
+
+.main h2 {
+  font-size: 32px;
+  margin-top: 20px;
+}
+
+.main .penulis a {
+  color: salmon;
+  text-decoration: none;
+}
+
+.main .penulis {
+  font-size: 11px;
+  margin-top: 20px;
+}
+
+.main p {
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.main li {
+  margin-left: 30px;
+}
+
+.sidebar {
+  width: 300px;
+  float: right;
+  padding: 20px;
+}
+
+.sidebar h3 {
+  font-weight: bold;
+  color: #666;
+}
+
+.sidebar img {
+  width: 70px;
+  height: 70px;
+  float: left;
+  padding-right: 10px;
+}
+
+.sidebar p {
+  font: 35px/28px arial;
+  font-weight: bold;
+  font-display: auto;
+}
+
+.sidebar .normal {
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.footer {
+  background-color: #333;
+  padding: 20px;
+}
+
+.footer .copy {
+  color: #eaeaea;
+  text-align: center;
+  font-size: 12px;
+}
+
+/* clearfix */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}

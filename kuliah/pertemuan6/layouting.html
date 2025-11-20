@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Layouting</title>
+    <style>
+        h1 {
+            background-color: aqua;
+        }
+
+        p {
+            background-color: red;
+        }
+        
+        b {
+            background-color: burlywood;
+        }
+        .p2 {
+            background-color: blue;            
+        }
+
+        p span {
+            background-color: brown;
+        }
+
+        h2 {
+            background-color: yellow;
+        }
+
+        a {
+            width: 100px;
+            display: inline-block;
+            background-color: aliceblue;
+            text-align: center;
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: large;
+
+        }
+
+        a:hover {
+            background-color: black;
+            color: aliceblue;
+        }
+
+        img {
+            width: 100px;
+            filter: grayscale(100%); filter: blur(6px);
+            transition: 2s;
+        
+        }
+        
+        img:hover {
+            filter: grayscale(0);
+        }
+
+        .kotak1 {
+            background-color: purple;
+            overflow: auto;
+            width: 150px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+    <h1>He <span>ll</span>o World</h1>
+    <p>Sayang unchpas</p>
+    <a href="#">Home</a>
+    <a href="#">Product</a>
+    <p class="p2">Ocydream</p>
+    <b class="p3">T-shirt</b>
+    </div>
+    <hr>
+
+    <div>
+        <h2>TIF</h2>
+    </div>
+
+    <a href="#">Home</a>
+    <a href="#">Product</a>
+    <a href="#">Mail</a>
+    <a href="#">Image</a>
+    <p class="img"><img src="pic1.jpg" alt=""></p>
+
+    <hr>
+    <div class="kotak1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum eius doloremque vero quos. Neque commodi adipisci optio unde quae quia corrupti debitis consectetur, fugit, magni expedita, fugiat ratione voluptate accusantium?</div>
+
+
+
+</body>
+</html>
