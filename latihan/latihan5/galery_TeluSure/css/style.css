@@ -1,0 +1,136 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9; /* Warna latar belakang lembut */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header Styling */
+.header {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #007bff; /* Warna biru TeluSure */
+    color: white;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.header h1 {
+    margin-bottom: 5px;
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+.header p {
+    font-size: 1.1em;
+    opacity: 0.9;
+}
+
+/* Grid Container - Layout 2x2 */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 kolom, lebar sama */
+    gap: 30px; /* Jarak antar item */
+    padding: 40px;
+    max-width: 1000px; 
+    margin: 40px auto; /* Margin atas dan bawah 40px */
+    flex-grow: 1; 
+}
+
+/* Styling untuk setiap item */
+.grid-item {
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    padding: 30px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.grid-item:hover {
+    transform: translateY(-8px); /* Efek angkat yang lebih menonjol */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Styling Ikon (Font Awesome) */
+.icon-wrapper {
+    font-size: 4.5em; /* Ukuran ikon diperbesar sedikit */
+    margin-bottom: 15px;
+}
+
+/* Penyesuaian Warna Ikon berdasarkan Kategori */
+/* Berita/Politik - Merah */
+.item1 .icon-wrapper {
+    color: #dc3545; 
+}
+/* Kesehatan - Hijau */
+.item2 .icon-wrapper {
+    color: #28a745; 
+}
+/* Story Telling - Oranye */
+.item3 .icon-wrapper {
+    color: #fd7e14; 
+}
+/* Pengetahuan Umum - Biru Muda */
+.item4 .icon-wrapper {
+    color: #17a2b8; 
+}
+
+.grid-item h2 {
+    font-size: 1.6em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.grid-item p {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    color: #6c757d;
+}
+
+.grid-item a {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px; /* Bentuk pil */
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    transition: background-color 0.3s;
+}
+
+.grid-item a:hover {
+    background-color: #0056b3;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer Styling */
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background-color: #343a40; 
+    color: #f8f9fa;
+    margin-top: auto; 
+    font-size: 0.9em;
+}
+
+/* Responsiveness untuk tampilan mobile */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* Menjadi 1 kolom pada layar kecil */
+        padding: 20px;
+        gap: 25px;
+    }
+    .header {
+        padding: 20px 15px;
+    }
+    .header h1 {
+        font-size: 2em;
+    }
+}
