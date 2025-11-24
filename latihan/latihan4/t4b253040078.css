@@ -1,155 +1,281 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font: 16px/28px arial, sans-serif;
-  background-color: #eaeaea;
-  color: #333;
-  background-size: 100%;
-  background-image: url(img/T4b/pattern.png);
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    background-color: #f7f7f7;
+    color: #333;
+    padding: 20px 0;
 }
+
 
 .container {
-  width: 960px;
-  margin: 80px auto;
-  background-color: #fff;
-  position: relative;
+    max-width: 1100px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
 }
 
-.header {
-  padding: 20px;
-  padding-bottom: 10px;
+/* Clearfix */
+.cf::before,
+.cf::after {
+    content: " ";
+    display: table;
 }
 
-.header .judul {
-  font-size: 40px;
-  font-weight: bold;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.telu-part {
-  color: #808080;
-}
-
-.sure-part {
-  color: red;
-}
-
-.telu-part, .sure-part {
-  display: inline;
-}
-
-.header ul li { 
-  display: inline-block;
-  margin-right: 10px;
-  margin-top: 20px;
-}
-
-.header a {
-  text-decoration: none;
-  color: salmon;
-  padding: 3px;
-}
-
-.header a:hover {
-  background-color: lightskyblue;
-  color: white;
-}
-
-.hero {
-  height: 320px;
-  background-image: url(img/T4b/hero.jpg);
-  background-size: cover;
-  background-position: -10px -160px;
-  border-bottom: 5px solid lightskyblue;
-  border-top: 5px solid salmon;
-}
-
-.main {
-  width: 600px;
-  padding: 20px;
-  box-sizing: border-box;
-  float: left;
-}
-
-.main h2 {
-  font-size: 32px;
-  margin-top: 20px;
-}
-
-.main .penulis a {
-  color: salmon;
-  text-decoration: none;
-}
-
-.main .penulis {
-  font-size: 11px;
-  margin-top: 20px;
-}
-
-.main p {
-  margin-bottom: 20px;
-  font-size: 14px;
-}
-
-.main li {
-  margin-left: 30px;
-}
-
-.sidebar {
-  width: 300px;
-  float: right;
-  padding: 20px;
-}
-
-.sidebar h3 {
-  font-weight: bold;
-  color: #666;
-}
-
-.sidebar img {
-  width: 70px;
-  height: 70px;
-  float: left;
-  padding-right: 10px;
-}
-
-.sidebar p {
-  font: 35px/28px arial;
-  font-weight: bold;
-  font-display: auto;
-}
-
-.sidebar .normal {
-  font-weight: normal;
-  font-size: 14px;
-}
-
-.footer {
-  background-color: #333;
-  padding: 20px;
-}
-
-.footer .copy {
-  color: #eaeaea;
-  text-align: center;
-  font-size: 12px;
-}
-
-/* clearfix */
-.cf:before,
-.cf:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
-}
-
-.cf:after {
+.cf::after {
     clear: both;
 }
 
-.cf {
-    *zoom: 1;
+
+.header {
+    padding: 25px 40px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .judul {
+    font-size: 2.5em;
+    font-weight: 900;
+    display: flex;
+}
+
+.telu-part {
+    color: #4a4a4a;
+    margin-right: -4px;
+}
+
+.sure-part {
+    color: #e30613;
+}
+
+.header nav ul li {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.header a {
+    text-decoration: none;
+    color: #4a4a4a;
+    padding: 8px 10px;
+    border-radius: 6px;
+    transition: background-color 0.2s, color 0.2s;
+    font-weight: 600;
+}
+
+.header a:hover {
+    background-color: #e30613;
+    color: white;
+}
+
+
+.hero {
+    height: 350px;
+    background-image: url(img/T4b/hero.jpg);
+    background-size: cover;
+    background-position: center center;
+    border-bottom: 5px solid #e30613;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    padding: 20px;
+}
+
+.hero-caption {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+.content {
+    padding: 40px;
+}
+
+.main {
+    width: 70%;
+    float: left;
+    padding-right: 40px;
+    border-right: 1px solid #eee;
+}
+
+.sidebar {
+    width: 30%;
+    float: right;
+    padding-left: 40px;
+}
+
+.main h2 {
+    font-size: 2.2em;
+    margin-bottom: 10px;
+    color: #212121;
+    line-height: 1.2;
+}
+
+.main .penulis {
+    font-size: 0.85em;
+    margin-bottom: 30px;
+    color: #777;
+    font-weight: 600;
+}
+
+.main .penulis a {
+    color: #e30613;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.main h3 {
+    font-size: 1.5em;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #e30613;
+    border-left: 4px solid #e30613;
+    padding-left: 10px;
+}
+
+.main p {
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.main .list-bullet {
+    list-style: disc;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+}
+
+.main .list-bullet li {
+    margin-bottom: 8px;
+}
+
+.main .youtube-link {
+    color: #007bff;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.youtube-box {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    position: relative;
+    padding-bottom: 56.25%; 
+    height: 0;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.youtube-box .video-embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.sidebar-card {
+    background-color: #fcfcfc;
+    border: 1px solid #eaeaea;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.sidebar h3 {
+    font-weight: 700;
+    color: #212121;
+    font-size: 1.4em;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 5px;
+}
+
+.sidebar .profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.sidebar img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar .logo-name {
+    font-size: 1.5em; 
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.sidebar .normal {
+    font-size: 0.9em;
+    margin-bottom: 15px;
+    line-height: 1.6;
+    text-align: justify;
+    color: #555;
+}
+
+
+.footer {
+    background-color: #212121; 
+    padding: 20px;
+    text-align: center;
+}
+
+.footer .copy {
+    color: #bbb;
+    font-size: 0.9em;
+    margin: 0;
+}
+
+@media (max-width: 900px) {
+    .container {
+        max-width: 95%;
+        margin: 20px auto;
+    }
+    
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .header nav ul {
+        margin-top: 15px;
+    }
+
+    .main, .sidebar {
+        float: none;
+        width: 100%;
+        padding: 0 20px; /* Uniform padding */
+        border-right: none;
+    }
+    
+    .main {
+        padding-bottom: 20px;
+        border-bottom: 1px solid #eee;
+    }
+    
+    .sidebar {
+        padding-top: 30px;
+    }
+
+    .content {
+        padding: 20px 0;
+    }
 }
